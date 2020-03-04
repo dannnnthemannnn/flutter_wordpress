@@ -174,7 +174,8 @@ class Post {
         }
       });
     }
-    categoryIDs = json['categories'] != null ? json['categories'].cast<int>() : null;
+    categoryIDs =
+        json['categories'] != null ? json['categories'].cast<int>() : null;
     tagIDs = json['tags'] != null ? json['tags'].cast<int>() : null;
     permalinkTemplate = json['permalink_template'];
     generatedSlug = json['generated_slug'];
@@ -211,7 +212,7 @@ class Post {
 
   @override
   String toString() {
-    return 'Post: { id: $id, title: ${title.rendered}, '
-        'author: {id: $authorID, name: ${author.name}}}';
+    return 'Post: { id: $id, title: ${title?.rendered}, '
+        'author: {id: $authorID, name: ${author?.name}}}';
   }
 }
