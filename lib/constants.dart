@@ -1,5 +1,5 @@
 const URL_JWT_BASE = '/wp-json/jwt-auth/v1';
-const URL_WP_BASE = '/wp-json/wp/v2';
+const URL_WP_BASE = '';
 
 const URL_JWT_TOKEN = '$URL_JWT_BASE/token';
 const URL_JWT_TOKEN_VALIDATE = '$URL_JWT_BASE/token/validate';
